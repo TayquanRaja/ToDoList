@@ -1,0 +1,133 @@
+body{
+    margin:0;
+    background-color: #e9967a;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color:  #2E2E2E;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    font-size:50px;
+}
+.box{
+    width: 500px;
+    height: auto;
+    background-color:wheat;
+    margin-left: 30%;
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #2E2E2E;
+    padding: 2px 2px 8px 2px;
+}
+.addtask{
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    border:2px solid #2E2E2E;
+    background-color: rgb(253, 209, 127);
+    margin-left: 120px;
+    align-content: center;
+}
+input{
+    border: none;
+    background-color: rgb(253, 209, 127);
+    transition: none;
+    width: 120px;
+    height: 30px;
+    margin-left: 35px;
+}
+input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.circle {
+  border-radius: 50px;
+  background-color: rgb(39, 197, 144);
+  height: 30px;
+  width: 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.circle:hover {
+  background-color: rgb(28, 160, 118); /* slightly darker green */
+  transform: scale(1.1); /* subtle zoom */
+}
+
+.task-input-group {
+  display: flex;
+  align-items: center; 
+  gap: 55px; 
+}
+ul {
+      margin-top: 2px;
+      padding: 0;
+      list-style-type: none;
+      
+    }
+
+li{
+      width: 250px;
+    height: auto;
+    border-radius: 20px;
+    border:2px solid #2E2E2E;
+    background-color: rgb(253, 209, 127);
+    margin-left: 120px;
+    align-content: center;
+    padding: 5px 0px 5px 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+#taskList {
+  padding: 0;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  list-style: none;
+  padding: 5px;
+  
+}
+
+.task-text {
+  flex: 1;
+  margin-left: -35px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.task-actions button:hover {
+  color: #f04729;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: red;
+}
+.task-checkbox{
+  border-radius: 5px;
+  margin-left: -40px;
+  align-self: start;
+  height: 25px;
+}
